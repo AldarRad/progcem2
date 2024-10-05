@@ -57,7 +57,7 @@ jobs:
     runs-on: macos-latest
     permissions: write-all 
     steps:
-      - name: Checkout code
+      #- name: Checkout code
         uses: actions/checkout@v4
         with:
           submodules: true
