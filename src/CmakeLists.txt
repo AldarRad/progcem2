@@ -1,12 +1,6 @@
-cmake_minimum_required(VERSION 3.5.0)
-
-
+cmake_minimum_required(VERSION 3.6.0)
+add_library(allocator INTERFACE custom_allocator.hpp)
+add_library(container custom_container.hpp )
 add_executable(labs4 main.cpp)
 
-
-
-set(CPACK_GENERATOR ZIP)
-
-set(CPACK_PACKAGE_VERSION_MAJOR "${PROJECT_VERSION_MAJOR}")
-set(CPACK_PACKAGE_VERSION_MINOR "${PROJECT_VERSION_MINOR}")
-set(CPACK_PACKAGE_VERSION_PATCH "${PROJECT_VERSION_PATCH}")
+target_link_libraries(labs4 allocator container)
