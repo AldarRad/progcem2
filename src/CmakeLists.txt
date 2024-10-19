@@ -7,9 +7,3 @@ add_library(a custom_allocator.hpp)
 add_library(c custom_container.hpp)
 
 target_link_libraries(lab_4 a c)
-
-set(CPACK_GENERATOR ZIP)
-
-set(CPACK_PACKAGE_VERSION_MAJOR "${PROJECT_VERSION_MAJOR}")
-set(CPACK_PACKAGE_VERSION_MINOR "${PROJECT_VERSION_MINOR}")
-set(CPACK_PACKAGE_VERSION_PATCH "${PROJECT_VERSION_PATCH}")
