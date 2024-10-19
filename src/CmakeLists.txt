@@ -3,6 +3,11 @@ cmake_minimum_required(VERSION 3.5.0)
 
 add_executable(lab_4 main.cpp)
 
+add_library(a custom_allocator.hpp)
+add_library(c custom_container.hpp)
+
+target_link_libraries(lab_4 a c)
+
 set(CPACK_GENERATOR ZIP)
 
 set(CPACK_PACKAGE_VERSION_MAJOR "${PROJECT_VERSION_MAJOR}")
