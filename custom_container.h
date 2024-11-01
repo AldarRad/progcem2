@@ -3,7 +3,6 @@
 #include <memory>
 #include <stdexcept>
 
-// Пользовательский контейнер, поддерживающий работу с аллокатором
 template <typename T, typename Alloc = std::allocator<T>>
 class CustomContainer {
 public:
@@ -11,18 +10,20 @@ public:
     using iterator = T*;
     using const_iterator = const T*;
 
-    CustomContainer(size_t capacity, const Alloc& alloc = Alloc())
-        : size_(0), capacity_(capacity), alloc_(alloc) {
+    CustomContainer(size_t capacity, const Alloc& alloc = Alloc()): size_(0), capacity_(capacity), alloc_(alloc) {
         data_ = alloc_.allocate(capacity_);
     }
 
-    ~CustomContainer() {
+    ~CustomContainer() 
+    {
         clear();
         alloc_.deallocate(data_, capacity_);
     }
 
-    void push_back(const T& value) {
-        if (size_ >= capacity_) {
+    void push_back(const T& value) 
+    {
+        if (size_ >= capacity_) 
+        {
             throw std::runtime_error("Exceeding capacity!");
         }
         alloc_.construct(data_ + size_, value);
@@ -35,8 +36,10 @@ public:
     bool empty() const { return size_ == 0; }
 
 private:
-    void clear() {
-        for (size_t i = 0; i < size_; ++i) {
+    void clear() 
+    {
+        for (size_t i = 0; i < size_; ++i) 
+        {
             alloc_.destroy(data_ + i);
         }
         size_ = 0;
