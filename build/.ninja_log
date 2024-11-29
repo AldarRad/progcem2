@@ -1,0 +1,8 @@
+# ninja log v5
+12	2676	7545974012398379	src/CMakeFiles/laba6.dir/main.cpp.obj	1a568d2d75f75233
+366	4069	7545975880364597	src/CMakeFiles/lab6.dir/GraphicPrimitive.cpp.obj	fc4a3fc05c1f0304
+8	4124	7545975880613926	src/CMakeFiles/lab6.dir/main.cpp.obj	dc4676ea113deceb
+176	4166	7545975882239573	src/CMakeFiles/lab6.dir/Document.cpp.obj	b38b4100c3ea17ca
+838	4224	7545975883585977	src/CMakeFiles/lab6.dir/View.cpp.obj	a348e0ce03bb1252
+1342	4804	7545975889189536	src/CMakeFiles/lab6.dir/Controller.cpp.obj	d10f0cacfac639e9
+4805	8493	7545975925614681	src/lab6.exe	d3da6c984cfcded5

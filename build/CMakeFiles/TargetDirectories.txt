@@ -1,0 +1,9 @@
+D:/program/program-3/laba6/build/CMakeFiles/package.dir
+D:/program/program-3/laba6/build/CMakeFiles/package_source.dir
+D:/program/program-3/laba6/build/CMakeFiles/edit_cache.dir
+D:/program/program-3/laba6/build/CMakeFiles/rebuild_cache.dir
+D:/program/program-3/laba6/build/src/CMakeFiles/lab6.dir
+D:/program/program-3/laba6/build/src/CMakeFiles/package.dir
+D:/program/program-3/laba6/build/src/CMakeFiles/package_source.dir
+D:/program/program-3/laba6/build/src/CMakeFiles/edit_cache.dir
+D:/program/program-3/laba6/build/src/CMakeFiles/rebuild_cache.dir
